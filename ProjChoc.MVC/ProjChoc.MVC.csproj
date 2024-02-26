@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-ProjChoc.MVC-5b29f36e-c6cc-43d7-b233-613487b25dbf</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjChoc.Infra.Data\ProjChoc.Infra.Data.csproj" />
+    <ProjectReference Include="..\ProjChoc.Infra.IoC\ProjChoc.Infra.IoC.csproj" />
+  </ItemGroup>
+
+</Project>

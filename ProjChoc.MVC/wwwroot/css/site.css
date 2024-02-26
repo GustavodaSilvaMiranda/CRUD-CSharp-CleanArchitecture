@@ -1,0 +1,28 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.products-word-wrap-break-name {
+    max-width: 100px;
+    word-wrap: break-word;
+}
+
+.products-word-wrap-break-description {
+    max-width: 500px;
+    word-wrap: break-word;
+}

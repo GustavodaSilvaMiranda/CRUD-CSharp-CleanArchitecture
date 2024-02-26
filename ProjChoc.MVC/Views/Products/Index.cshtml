@@ -1,0 +1,75 @@
+﻿@model IEnumerable<ProjChoc.Application.ViewModels.ProductViewModel>
+
+@{
+	ViewData["Title"] = "Products Management";
+}
+
+<style>
+	.modal-lg {
+		max-width: 80%;
+	}
+</style>
+
+<div>
+	<h2>@ViewData["Title"]</h2>
+</div>
+<hr />
+
+<div class="row">
+	<div class="col-md-12">
+		<div>
+			<div class="pull-left">
+				<a asp-action="Create" class="btn btn-outline-success">
+					<span title="Register New" class="fa-solid fa-plus"></span> Register New
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<br />
+<div class="Panel panel-default">
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>
+					@Html.DisplayNameFor(model => model.Name)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.Description)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.Price)
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td class="products-word-wrap-break-name">
+						@Html.DisplayFor(modelItem => item.Name)
+					</td>
+					<td class="products-word-wrap-break-description">
+						@Html.DisplayFor(modelItem => item.Description)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.Price)
+					</td>
+					<td>
+						<a asp-action="Edit" asp-route-id="@item.Id" title="Edit" class="btn btn-outline-warning">
+							<span class="fas fa-edit">Edit</span>
+						</a>
+
+						<a asp-action="Details" asp-route-id="@item.Id" title="Details" class="btn btn-outline-dark">
+							<span class="fa-solid fa-circle-info">Details</span>
+						</a>
+
+						<a asp-action="Delete" asp-route-id="@item.Id" title="Delete" class="btn btn-outline-danger">
+							<span class="fa-solid fa-trash-can">Delete</span>
+						</a>
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>
