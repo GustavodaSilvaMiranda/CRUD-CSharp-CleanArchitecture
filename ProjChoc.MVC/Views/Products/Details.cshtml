@@ -1,8 +1,8 @@
 ﻿@model ProjChoc.Application.ViewModels.ProductViewModel
 @{
-	ViewData["Title"] = "Details";
+	ViewData["Title"] = "Detalhes";
 }
-<h3>Product Details</h3>
+<h3>Detalhes do Produto</h3>
 <div>
 	<hr />
 	<dl class="row">
@@ -28,7 +28,7 @@
 </div>
 <div>
 	<a asp-action="Edit" asp-route-id="@Model.Id" title="Edit" class="btn btn-outline-warning">
-		<span class="fas fa-edit">Edit</span>
+		<span class="fas fa-edit">Editar</span>
 	</a>
-	<a asp-action="Index" class="btn btn-outline-info">Back to list</a>
+	<a asp-action="Index" class="btn btn-outline-info">Lista de Produtos</a>
 </div>
