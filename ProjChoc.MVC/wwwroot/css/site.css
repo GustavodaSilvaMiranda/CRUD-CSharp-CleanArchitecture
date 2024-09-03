@@ -33,4 +33,6 @@ body {
     max-height: 75vh;
     margin: auto;
     vertical-align: bottom;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
 }
