@@ -13,10 +13,6 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
-}
-
 .products-word-wrap-break-name {
     max-width: 100px;
     word-wrap: break-word;
@@ -27,12 +23,59 @@ body {
     word-wrap: break-word;
 }
 
-.index_carousel-image {
-    object-fit: cover;
-    max-width: 100%;
-    max-height: 75vh;
-    margin: auto;
-    vertical-align: bottom;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
+body {
+    font-family: Arial, sans-serif;
+    margin-bottom: 60px;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #f0f0f0;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 0 0 20px 20px;
+}
+
+.carousel {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slide {
+    display: none;
+}
+
+.carousel-slide img {
+    width: 100%;
+    border-radius: 20px;
+    height: 700px; /* Altura fixa para o carrossel */
+    object-fit: cover; /* Preenche o contêiner do carrossel */
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+.content {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 20px 20px 0 0;
+    margin-top: 20px;
 }

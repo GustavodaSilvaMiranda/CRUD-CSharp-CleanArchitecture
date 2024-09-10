@@ -2,27 +2,29 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="@Url.Content("~/Content/ContentIndex/ImagemIndex1.png")" class="d-block w-100 index_carousel-image" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="@Url.Content("~/Content/ContentIndex/ImagemIndex2.png")" class="d-block w-100 index_carousel-image" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="@Url.Content("~/Content/ContentIndex/ImagemIndex3.png")" class="d-block w-100 index_carousel-image" alt="...">
-        </div>
+<section class="carousel">
+    <div class="carousel-slide">
+        <img src="~/Content/ContentIndex/ImagemIndex1.png" alt="Imagem 1">
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
+    <div class="carousel-slide">
+        <img src="~/Content/ContentIndex/ImagemIndex2.png" alt="Imagem 2">
+    </div>
+    <div class="carousel-slide">
+        <img src="~/Content/ContentIndex/ImagemIndex3.png" alt="Imagem 3">
+    </div>
+</section>
+
+<section class="content">
+    <h2>Sobre Nós</h2>
+    <p>Somos uma empresa apaixonada pela arte de fazer chocolates. Desde nossa fundação, nos dedicamos a criar experiências únicas para nossos clientes, combinando ingredientes de alta qualidade com técnicas tradicionais e inovação constante.</p>
+
+    <h2>Serviços</h2>
+    <p>Oferecemos uma variedade de produtos, incluindo chocolates artesanais, bombons personalizados, cestas de presente e opções exclusivas para eventos especiais. Nosso compromisso é com a excelência em sabor e apresentação.</p>
+
+    <h2>Contato</h2>
+    <p>Entre em contato conosco para encomendar chocolates personalizados ou saber mais sobre como podemos adoçar seu próximo evento.</p>
+</section>
+<script src="~/js/site.js"></script>
 <div class="text-center">
     <h1 class="display-4"></h1>
     <p>Learn about <a>Construído usando C# ASP.NET - Clean Architecture</a>.</p>
